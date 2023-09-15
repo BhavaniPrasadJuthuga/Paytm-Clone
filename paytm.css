@@ -1,0 +1,303 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+  #arrow_down {
+    font-size: 30px;
+    background-color: #042e6f;
+    color: black;
+  }
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-top: 40px;
+    width: 200px;
+  }
+  .input-box {
+    position: relative;
+  }
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ebebeb;
+    transition: 0.8s;
+  }
+  .input-box span {
+    position: absolute;
+    padding: 10px 0px;
+    top: 10px;
+    pointer-events: none;
+    left: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ababab;
+    transition: 0.5s;
+  }
+  .input-box input:focus ~ span,
+  .input-box input:valid ~ span {
+    color: #34c6f7;
+    transform: translateY(-8px);
+    font-size: 0.65em;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+
+  .input-box input:focus {
+    border-bottom: 1px solid #34c6f7;
+  }
+
+  .form button {
+    background: #34c6f7;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 20px auto;
+    min-width: 100px;
+    color: #fff;
+    border: 0;
+    font-weight: 600;
+    margin-bottom: 15rem;
+  }
+  .form button a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* ---------------recipt page---------------------- */
+
+  .reciept-nav {
+    display: flex;
+    background-color: #042e6f;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5% 10%;
+    padding: 10px 0px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    align-items: center;
+  }
+  .reciept-nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reciept-nav div img {
+    width: 20px;
+  }
+  .reciept-nav div p {
+    margin-top: 4px;
+    font-size: 10px;
+    color: white;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    padding-top: 5%;
+    justify-content: space-between;
+  }
+  .head-logo {
+    height: 20px;
+  }
+  .left-arrow {
+    height: 15px;
+  }
+  .head h1 {
+    color: #34c6f7;
+    font-size: 10px;
+    font-weight: 600;
+    padding-right: 0px;
+    margin-right: -45px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    background-color: #def6ff;
+    margin: 5%;
+    border-radius: 8px;
+    align-items: center;
+    overflow: hidden;
+  }
+  .user-details {
+    display: flex;
+    margin: 0px 10px;
+    margin-top: 8%;
+  }
+  .user-details div {
+    padding: 5px;
+    margin-left: 3px;
+  }
+  .user-details div h1 {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .user-details div p {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+  }
+
+  /* .person-image{
+        
+    } */
+  .person-image2 {
+    width: 28px;
+    height: 30px;
+    color: white;
+    background-color: rgb(237, 111, 237);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .person-image2 h1 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .amount {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+  }
+
+  .amount div {
+    background-color: rgb(71, 236, 71);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .date {
+    color: #34c6f7;
+    font-size: 10px;
+  }
+  .date p {
+    font-weight: 600;
+    letter-spacing: 0px;
+  }
+  .date p i {
+    font-size: 10px;
+  }
+  .query-buttons {
+    margin: 8% 0;
+  }
+  .query-buttons button {
+    background-color: white;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 9px 10px;
+    border: solid 1px #c7c7c7;
+    border-radius: 20px;
+    margin: 0 5px;
+  }
+  .strip1 {
+    width: 100%;
+    background-color: #34c6f7;
+    height: 6px;
+  }
+  .strip2 {
+    width: 100%;
+    background-color: #042e6f;
+    height: 6px;
+  }
+  .advertisment {
+    margin: 5%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .advertisment img {
+    width: 100%;
+  }
+  .recomendation-title {
+    font-size: 14px;
+    margin: 5% 5% 2% 5%;
+  }
+  .recomendation {
+    display: flex;
+  }
+  .recomendation div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .recomendation-logo2 {
+    background-color: white;
+  }
+
+  .recomendation div div {
+    width: 35px;
+    height: 35px;
+    background-color: #cadcf4;
+    margin: 0 5%;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .recomendation div div img {
+    width: 100%;
+    border-radius: 35px;
+  }
+  .recomendation div p {
+    font-size: 9px;
+  }
+
+  .upi-recomendation {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 0.1px #c7c7c746;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .upi-recomendation img {
+    height: 35px;
+  }
+  .upi-recomendation div p {
+    font-size: 12px;
+  }
+  .try-now {
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+  }
+  .upi-recomendation div i {
+    color: black;
+    font-size: 15px;
+  }
+  .reciept {
+    display: none;
+  }
+  .note {
+    text-align: center;
+    color: red;
+  }
+}

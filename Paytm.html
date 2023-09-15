@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm</title>
+    <script src="paytm.js"></script>
+    <link rel="stylesheet" href="paytm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="home-page">
+        <img class="logo" src="images/Paytm_logo_PNG1.png" alt="">
+        <form class="form" onsubmit="handleForm()">
+            <div class="input-box">
+                
+                <input required="required" class="input-name" ><span>Name</span>
+            </div>
+            <div class="input-box">
+                
+                <input required="required"  class="input_mobile_number" inputmode="numeric" ><span>mobile No</span>
+            </div>
+            <div class="input-box">
+                
+                <input required="required" class="input_upi_id"><span>UPI ID</span>
+            </div>
+            <div class="input-box">
+                <input required="required" class="input_amount"  inputmode="numeric" type="number" ><span>Amount</span> 
+            </div>
+            <button onclick="handlePayButton()"  class="pay" type="button"><a href="#reciept">Pay</a></button>
+        </form>
+        
+    </div>
+    <section class="reciept" id="reciept">
+        <nav class="reciept-nav ">
+            <div>
+                <img src="images/home.png" alt="">
+                <p>Home</p>
+            </div>
+            <div>
+                <img src="images/scan.png" alt="">
+                <p>Scan</p>
+            </div>
+            <div>
+                <img src="images/cashback.png" alt="">
+                <p>Cashback</p>
+            </div>
+            <div>
+                <img src="images/passbook.png" alt="">
+                <p>Passbook</p>
+            </div>
+        </nav>
+        <div class="head">
+            <img onclick="handleBackarrow()" class="left-arrow" src="images/left-arrow.png" alt="">
+            <img class="head-logo" src="images/Paytm_logo_PNG1.png" alt="">
+            <h1>Help<h1>
+        </div>
+        <h1 class="note">Note:This is a Clone App created as a project in learning process</h1>
+        <div class="details">
+            <div class="user-details">
+                <!-- <img class="person-image" src="images/Screenshot 2023-08-08 164024.png" alt=""> -->
+                <div class="person-image2"><h1 class="logo_name">UK </h1></div>
+                <div>
+                    <h1 class="person-name">Pedamallu Y N V Visw</h1>
+                    <p class="person-upi">juttuladurgaprasad@ybl</p>
+                </div>
+            </div>
+            <div class="amount">
+                <h1>₹<span class="amount_no">5000 <span></span></h1>
+                <div class="animation"></div>
+            </div>
+            <div class="date">
+                <p><span class="date_time">09 Aug, 15:47 PM</span>&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></p>
+            </div>
+            <div class="query-buttons">
+                <button>Check Balance</button>
+                <button>Share</button>
+                <button>Pay Again</button>
+            </div>
+            
+            <div class="strip1"></div>
+            <div class="strip2"></div>
+        </div>
+    <div class="advertisment">
+        <img class="advertisment-img" src="images/tata-ad.jpg">
+    </div>
+     <h1 class="recomendation-title">Recommended Services</h1>
+     <div class="recomendation">
+        <div>
+            <div class="recomendation-logo1"><img src="images/stock.jpg" alt=""></div>
+            <p class="recomendation-name">Invest in Stockts</p>
+        </div>
+        <div>
+            <div  class="recomendation-logo2"><img src="images/postpaid.jpg"></div>
+            <p class="recomendation-name">Paytm Postpaid</p>
+        </div>
+        <div>
+            <div style="background-color: hsla(48, 100%, 77%, 0.658);" class="recomendation-logo3"><img src="images/phonr-recharge.jpg"></div>
+            <p class="recomendation-name">Mobile Recharge</p>
+        </div>
+        <div>
+            <div style="background-color: #a9f3cd" class="recomendation-logo4"><img src="images/E-bulb.png" alt=""></div>
+            <p class="recomendation-name">Electricity Bill Payment</p>
+        </div>
+        <div>
+            <div style="background-color: #ffe7ff" class="recomendation-logo5"><img src="images/all-services.png"></div>
+            <p class="recomendation-name">All Services</p>
+        </div>
+    </div>
+    <div class="upi-recomendation">
+        <img  src="images/paytm-upi.png" alt="">
+        <div>
+            <p>Send Money from Paytm</p>
+            <p><b>to any UPI App</b></p>
+        </div>
+        <div class="arrow">
+            <p1 class="try-now">Try Now</p1>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    
+    </section>
+</body>
+</html>
